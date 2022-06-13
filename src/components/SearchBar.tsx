@@ -2,8 +2,8 @@ import logo from '../assets/githubLogo.svg';
 import React from 'react';
 
 type SearchBarProps = {
-  onChange: Function;
-  onSearch: Function;
+  onChange: (target: string) => void;
+  onSearch: () => void;
 };
 const SearchBar = (props: SearchBarProps) => {
   const { onChange, onSearch } = props;
